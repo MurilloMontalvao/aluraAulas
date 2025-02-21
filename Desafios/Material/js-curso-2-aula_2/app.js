@@ -10,8 +10,8 @@ function exibirMensagemInicial() {
     exibirTextoNaTela('h1', 'Jogo do número secreto');
     exibirTextoNaTela('p', 'Escolha um número entre 1 e 10');  
 }
-exibirTextoNaTela('h1', 'Jogo do número secreto');
-exibirTextoNaTela('p', 'Escolha um número entre 1 e 10');
+
+exibirMensagemInicial();
 
 function verificarChute() {
     let chute = document.querySelector('input').value;
@@ -47,14 +47,5 @@ function reiniciarJogo() {
     limparCampo();
     exibirMensagemInicial();
     tentativa = 1;
+    document.getElementById('reiniciar').setAttribute('disabled', true);
 }
-
-
-
-
-
-
-
-
-
-
